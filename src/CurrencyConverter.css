@@ -1,0 +1,100 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f0f4f8, #e2e6ea);
+    margin: 0;
+    padding: 0;
+}
+
+.currency-converter {
+    padding: 40px;
+    max-width: 450px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.currency-converter:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.amount-input,
+.currency-select,
+.convert-button {
+    width: 100%; 
+    padding: 12px; 
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.amount-input:focus,
+.currency-select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+.convert-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.convert-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.result {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    color: #28a745; 
+}
+
+.arrow {
+    margin: 0 10px;
+    font-size: 24px; 
+}
+
+
+@media (max-width: 600px) {
+    .currency-converter {
+        padding: 25px;
+        margin: 20px auto; 
+    }
+
+    .amount-input,
+    .currency-select,
+    .convert-button {
+        padding: 10px; 
+        font-size: 14px; 
+        width: calc(100% - 20px); 
+    }
+
+    h1 {
+        font-size: 24px; 
+    }
+
+    .result {
+        font-size: 18px; 
+    }
+}
